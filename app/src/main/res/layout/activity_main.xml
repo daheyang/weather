@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+
+<!--
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/mission1_symbol"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="32dp"
+        />
+        -->
+
+
+    <ImageView
+        android:id="@+id/mission1_up_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_up"
+        android:layout_below="@id/mission1_symbol"
+        android:layout_alignLeft="@id/mission1_symbol"/>
+
+    <TextView
+        android:id="@+id/mission1_up_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/mission1_up_image"
+        android:layout_alignTop="@id/mission1_up_image"
+        android:textColor="@android:color/white"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/mission1_down_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_down"
+        android:layout_marginLeft="32dp"
+        android:layout_toRightOf="@id/mission1_up_text"
+        android:layout_alignTop="@id/mission1_up_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
