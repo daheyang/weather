@@ -14,8 +14,8 @@ class MyAdapter(val dataList: MutableList<WeatherDate>) : RecyclerView.Adapter<M
 
         holder?.let {
             it.dayView.text = weatherData.day
-            it.maxView.text = weatherData.day
-            it.minView.text = weatherData.day
+            it.maxView.text = weatherData.max
+            it.minView.text = weatherData.min
             it.imgView.setImageBitmap(weatherData.img)
         }
     }

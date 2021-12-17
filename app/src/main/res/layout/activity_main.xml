@@ -8,15 +8,15 @@
     tools:context=".MainActivity">
 
 
-<!--
     <com.android.volley.toolbox.NetworkImageView
         android:id="@+id/mission1_symbol"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="32dp"
+
         />
-        -->
+
 
 
     <ImageView
